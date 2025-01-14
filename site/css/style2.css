@@ -1,27 +1,103 @@
-#layout{
-    background-color: rgb(0, 0, 0);
-    width: 500px;
-    margin:0 auto;
+/* Définition des couleurs */
+:root {
+    --bleu: #0d71eb;
+    --blanc: #FFFFFF;
+    --noir: #000000;
+}
+
+/* Style global */
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blanc);
+    color: var(--noir);
+}
+
+/* En-tête */
+header {
+    background-color: var(--bleu);
+    color: var(--blanc);
+    padding: 20px;
     text-align: center;
 }
 
-/* Left-aligned text /
-.gauche {
-    text-align: left;
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
-/ Right-aligned text /
-.droite {
-    text-align: right;
+/* Navigation */
+nav {
+    background-color: var(--noir);
+    padding: 10px;
+    text-align: center;
 }
 
-/ Style for h2, p, and button (coloring text white) /
-h2, p, button {
-    color: white;
+nav a {
+    color: var(--blanc);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
-/ Button background color */
-button {
-    background-color: blue;
+nav a:hover {
+    color: var(--bleu);
 }
 
+/* Section principale */
+main {
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--bleu);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: var(--noir);
+    color: var(--blanc);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Mise en page responsive */
+@media screen and (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
