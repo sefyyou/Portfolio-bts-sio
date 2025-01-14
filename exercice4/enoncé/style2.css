@@ -1,0 +1,27 @@
+#layout{
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+    margin:0 auto;
+    text-align: center;
+}
+
+/* Left-aligned text /
+.gauche {
+    text-align: left;
+}
+
+/ Right-aligned text /
+.droite {
+    text-align: right;
+}
+
+/ Style for h2, p, and button (coloring text white) /
+h2, p, button {
+    color: white;
+}
+
+/ Button background color */
+button {
+    background-color: blue;
+}
+
